@@ -1,32 +1,31 @@
-<nav style="position: fixed; top: 0; left: 0; width: 250px; height: 100vh; background: #f8f9fa; padding: 20px; box-shadow: 2px 0 5px rgba(0,0,0,0.1); overflow-y: auto;">
-  <h2>SP-Malaria</h2>
-  <ul style="list-style: none; padding: 0;">
-    <li><a routerLink="/dashboard" style="display: block; padding: 10px; text-decoration: none; color: #333;">Dashboard</a></li>
-    <li><a routerLink="/region-medicale-1" style="display: block; padding: 10px; text-decoration: none; color: #333;">Région Médicale 1</a></li>
-    <li><a routerLink="/region-medicale-5" style="display: block; padding: 10px; text-decoration: none; color: #333;">Région Médicale 5</a></li>
-    <li><a routerLink="/gestion-des-sites-sentinelles-3" style="display: block; padding: 10px; text-decoration: none; color: #333;">Gestion Sites Sentinelles</a></li>
-    <li><a routerLink="/gestion-des-utilisateurs" style="display: block; padding: 10px; text-decoration: none; color: #333;">Gestion Utilisateurs</a></li>
-    <li><a routerLink="/gestion-des-roles-et-permissions" style="display: block; padding: 10px; text-decoration: none; color: #333;">Rôles & Permissions</a></li>
-    <li><a routerLink="/analyse-des-donnees-chercheur" style="display: block; padding: 10px; text-decoration: none; color: #333;">Analyse Données Chercheur</a></li>
-    <li><a routerLink="/gestion-des-captures-laboratoire-5" style="display: block; padding: 10px; text-decoration: none; color: #333;">Captures Laboratoire</a></li>
-    <li><a routerLink="/gestion-des-datasets-et-annotations" style="display: block; padding: 10px; text-decoration: none; color: #333;">Datasets & Annotations</a></li>
-    <li><a routerLink="/catalogue-des-modeles-deployes" style="display: block; padding: 10px; text-decoration: none; color: #333;">Catalogue Modèles</a></li>
-    <li><a routerLink="/configuration-modeles-risque" style="display: block; padding: 10px; text-decoration: none; color: #333;">Configuration Modèles Risque</a></li>
-    <li><a routerLink="/gestion-modeles-visuels-4" style="display: block; padding: 10px; text-decoration: none; color: #333;">Modèles Visuels</a></li>
-    <li><a routerLink="/surveillance-modeles-audio" style="display: block; padding: 10px; text-decoration: none; color: #333;">Surveillance Audio</a></li>
-    <li><a routerLink="/tableau-de-bord-pipelines-ml-1" style="display: block; padding: 10px; text-decoration: none; color: #333;">Pipelines ML 1</a></li>
-    <li><a routerLink="/tableau-de-bord-pipelines-ml-4" style="display: block; padding: 10px; text-decoration: none; color: #333;">Pipelines ML 4</a></li>
-    <li><a routerLink="/tableau-de-bord-activite-utilisateurs" style="display: block; padding: 10px; text-decoration: none; color: #333;">Activité Utilisateurs</a></li>
-    <li><a routerLink="/tableau-de-bord-rapports-oms" style="display: block; padding: 10px; text-decoration: none; color: #333;">Rapports OMS</a></li>
-    <li><a routerLink="/configuration-indicateurs-rapport" style="display: block; padding: 10px; text-decoration: none; color: #333;">Indicateurs Rapport</a></li>
-    <li><a routerLink="/generateur-rapports-personnalises" style="display: block; padding: 10px; text-decoration: none; color: #333;">Générateur Rapports</a></li>
-    <li><a routerLink="/gestion-donnees-hors-ligne" style="display: block; padding: 10px; text-decoration: none; color: #333;">Données Hors Ligne</a></li>
-    <li><a routerLink="/tableau-de-bord-synchro-dhis2" style="display: block; padding: 10px; text-decoration: none; color: #333;">Synchro DHIS2</a></li>
-    <li><a routerLink="/configuration-integration-dhis2" style="display: block; padding: 10px; text-decoration: none; color: #333;">Intégration DHIS2</a></li>
-    <li><a routerLink="/parametres-de-synchronisation" style="display: block; padding: 10px; text-decoration: none; color: #333;">Paramètres Synchro</a></li>
-    <li><a routerLink="/statut-synchronisation-globale" style="display: block; padding: 10px; text-decoration: none; color: #333;">Statut Synchro Globale</a></li>
-    <li><a routerLink="/validation-donnees-dhis2" style="display: block; padding: 10px; text-decoration: none; color: #333;">Validation DHIS2</a></li>
-<li><a routerLink="/parametres-linguistiques" style="display: block; padding: 10px; text-decoration: none; color: #333;">Paramètres Linguistiques</a></li>
+class="fixed inset-y-0 left-0 z-50 w-64 bg-background-light dark:bg-background-dark p-5 shadow-xl overflow-y-auto border-r border-gray-200 dark:border-gray-700 ml-0"
+  <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">SP-Malaria</h2>
+  <ul class="space-y-2 p-0 m-0 list-none">
+    <li><a routerLink="/dashboard" routerLinkActive="active" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Dashboard</a></li>
+    <li><a routerLink="/region-medicale-1" routerLinkActive="active" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Région Médicale 1</a></li>
+    <li><a routerLink="/region-medicale-5" routerLinkActive="active" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Région Médicale 5</a></li>
+    <li><a routerLink="/gestion-des-sites-sentinelles-3" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Gestion Sites Sentinelles</a></li>
+    <li><a routerLink="/gestion-des-utilisateurs" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Gestion Utilisateurs</a></li>
+    <li><a routerLink="/gestion-des-roles-et-permissions" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Rôles & Permissions</a></li>
+    <li><a routerLink="/analyse-des-donnees-chercheur" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Analyse Données Chercheur</a></li>
+    <li><a routerLink="/gestion-des-captures-laboratoire-5" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Captures Laboratoire</a></li>
+    <li><a routerLink="/gestion-des-datasets-et-annotations" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Datasets & Annotations</a></li>
+    <li><a routerLink="/catalogue-des-modeles-deployes" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Catalogue Modèles</a></li>
+    <li><a routerLink="/configuration-modeles-risque" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Configuration Modèles Risque</a></li>
+    <li><a routerLink="/gestion-modeles-visuels-4" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Modèles Visuels</a></li>
+    <li><a routerLink="/surveillance-modeles-audio" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Surveillance Audio</a></li>
+    <li><a routerLink="/tableau-de-bord-pipelines-ml-1" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Pipelines ML 1</a></li>
+    <li><a routerLink="/tableau-de-bord-pipelines-ml-4" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Pipelines ML 4</a></li>
+    <li><a routerLink="/tableau-de-bord-activite-utilisateurs" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Activité Utilisateurs</a></li>
+    <li><a routerLink="/tableau-de-bord-rapports-oms" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Rapports OMS</a></li>
+    <li><a routerLink="/configuration-indicateurs-rapport" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Indicateurs Rapport</a></li>
+    <li><a routerLink="/generateur-rapports-personnalises" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Générateur Rapports</a></li>
+    <li><a routerLink="/gestion-donnees-hors-ligne" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Données Hors Ligne</a></li>
+    <li><a routerLink="/tableau-de-bord-synchro-dhis2" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Synchro DHIS2</a></li>
+    <li><a routerLink="/configuration-integration-dhis2" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Intégration DHIS2</a></li>
+    <li><a routerLink="/parametres-de-synchronisation" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Paramètres Synchro</a></li>
+    <li><a routerLink="/statut-synchronisation-globale" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Statut Synchro Globale</a></li>
+    <li><a routerLink="/validation-donnees-dhis2" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Validation DHIS2</a></li>
+    <li><a routerLink="/parametres-linguistiques" class="block p-4 text-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700 rounded-lg no-underline transition-colors">Paramètres Linguistiques</a></li>
   </ul>
 </nav>
-

@@ -1,25 +1,28 @@
-# Auth Implementation Plan
+# Fix Angular ng serve Errors - Implementation Plan
 
-## Steps:
-- [x] 1. Create frontend-angular/src/app/core/models/user.model.ts
-- [x] 2. Create frontend-angular/src/app/core/services/auth.service.ts
-- [x] 3. Create frontend-angular/src/app/core/guards/auth.guard.ts
-- [x] 4. Edit backend-laravel/app/Http/Controllers/Api/AuthController.php (add logout)
-- [x] 5. Edit backend-laravel/routes/api.php (add /auth/logout)
-- [x] 6. Edit frontend-angular/src/app/app.routes.ts (protect routes with authGuard)
-- [x] 7. Edit frontend-angular/src/app/app.ts (add HttpClient providers)
-- [x] 8. Edit frontend-angular/src/app/nav/nav.ts (show user info, logout)
-- [x] Test: login via Postman, ng serve, check guard redirects.
+## Status: In Progress
 
-✅ Authentication complete!
+### Step 1: Install missing Tailwind plugin [SKIPPED - shell syntax]
+- Will retry with Windows CMD syntax later.
+- package.json verification pending.
 
-Backend: login, logout, user endpoints ready.
-Frontend: models, service, guard, protected routes, nav with logout.
+### Step 2: Create postcss.config.js [COMPLETE ✅]
+- Created frontend-angular/postcss.config.js with Tailwind + autoprefixer.
 
-To test:
-1. Backend: php artisan serve
-2. Test login POST http://localhost:8000/api/login {"email": "user@example.com", "password": "password"}
-3. Frontend: cd frontend-angular && ng serve
-4. Open http://localhost:4200 - should redirect to login since no token, but since no login page, add token to localStorage manually for test.
+### Step 3: Fix login.component.ts - Remove unused RouterLink [COMPLETE ✅]
+- Removed RouterLink import and from imports array in src/app/login/login.component.ts.
 
-Next: Layout + dashboard data.
+### Step 4: Refactor region-medicale-5.html [COMPLETE ✅]
+- Created clean template without HTML wrapper/CDN/@layer in src/app/region-medicale-5/region-medicale-5.html.
+
+### Step 5: Update styles.css with Material Symbols [COMPLETE ✅]
+- Added .material-symbols-outlined styles to @layer base in src/styles.css.
+
+### Step 6: Test ng serve [PENDING]
+- Run `ng serve` in frontend-angular.
+- Update status on success.
+
+### Step 7: Check for similar issues in other files [PENDING]
+- Search other HTML for Tailwind CDN/@layer.
+
+**Next action: Step 3 (fix login.component.ts).**

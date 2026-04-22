@@ -1,20 +1,18 @@
 import { Routes } from '@angular/router';
 
-import { authGuard } from './core/guards/auth.guard';
-
 export const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
-  { path: 'dashboard', canActivate: [authGuard], loadComponent: () => import('./dashboard/dashboard.component').then(m => m.DashboardComponent) },
-  { path: 'analyse-des-donnees-chercheur', canActivate: [authGuard], loadComponent: () => import('./analyse-des-donnees-chercheur/analyse-des-donnees-chercheur.component').then(m => m.AnalyseDesDonneesChercheurComponent) },
-  { path: 'catalogue-des-modeles-deployes', canActivate: [authGuard], loadComponent: () => import('./catalogue-des-modeles-deployes/catalogue-des-modeles-deployes.component').then(m => m.CatalogueDesModelesDeployesComponent) },
-  { path: 'configuration-indicateurs-rapport', canActivate: [authGuard], loadComponent: () => import('./configuration-indicateurs-rapport/configuration-indicateurs-rapport.component').then(m => m.ConfigurationIndicateursRapportComponent) },
-  { path: 'configuration-integration-dhis2', canActivate: [authGuard], loadComponent: () => import('./configuration-integration-dhis2/configuration-integration-dhis2.component').then(m => m.ConfigurationIntegrationDhis2Component) },
-  { path: 'configuration-modeles-risque', canActivate: [authGuard], loadComponent: () => import('./configuration-modeles-risque/configuration-modeles-risque.component').then(m => m.ConfigurationModelesRisqueComponent) },
-  { path: 'generateur-rapports-personnalises', canActivate: [authGuard], loadComponent: () => import('./generateur-rapports-personnalises/generateur-rapports-personnalises.component').then(m => m.GenerateurRapportsPersonnalisesComponent) },
-  { path: 'gestion-des-captures-laboratoire-5', canActivate: [authGuard], loadComponent: () => import('./gestion-des-captures-laboratoire-5/gestion-des-captures-laboratoire-5.component').then(m => m.GestionDesCapturesLaboratoire5Component) },
-  { path: 'gestion-des-datasets-et-annotations', canActivate: [authGuard], loadComponent: () => import('./gestion-des-datasets-et-annotations/gestion-des-datasets-et-annotations.component').then(m => m.GestionDesDatasetsEtAnnotationsComponent) },
-  { path: 'gestion-des-roles-et-permissions', canActivate: [authGuard], loadComponent: () => import('./gestion-des-roles-et-permissions/gestion-des-roles-et-permissions.component').then(m => m.GestionDesRolesEtPermissionsComponent) },
-  { path: 'gestion-des-sites-sentinelles-3', canActivate: [authGuard], loadComponent: () => import('./gestion-des-sites-sentinelles-3/gestion-des-sites-sentinelles-3.component').then(m => m.GestionDesSitesSentinelles3Component) },
+{ path: 'dashboard', loadComponent: () => import('./gestion-modeles-visuels-4/gestion-modeles-visuels-4.component').then(m => m.GestionModelesVisuels4Component) },
+  { path: 'analyse-des-donnees-chercheur', loadComponent: () => import('./analyse-des-donnees-chercheur/analyse-des-donnees-chercheur.component').then(m => m.AnalyseDesDonneesChercheurComponent) },
+  { path: 'catalogue-des-modeles-deployes', loadComponent: () => import('./catalogue-des-modeles-deployes/catalogue-des-modeles-deployes.component').then(m => m.CatalogueDesModelesDeployesComponent) },
+  { path: 'configuration-indicateurs-rapport', loadComponent: () => import('./configuration-indicateurs-rapport/configuration-indicateurs-rapport.component').then(m => m.ConfigurationIndicateursRapportComponent) },
+  { path: 'configuration-integration-dhis2', loadComponent: () => import('./configuration-integration-dhis2/configuration-integration-dhis2.component').then(m => m.ConfigurationIntegrationDhis2Component) },
+  { path: 'configuration-modeles-risque', loadComponent: () => import('./configuration-modeles-risque/configuration-modeles-risque.component').then(m => m.ConfigurationModelesRisqueComponent) },
+  { path: 'generateur-rapports-personnalises', loadComponent: () => import('./generateur-rapports-personnalises/generateur-rapports-personnalises.component').then(m => m.GenerateurRapportsPersonnalisesComponent) },
+  { path: 'gestion-des-captures-laboratoire-5', loadComponent: () => import('./gestion-des-captures-laboratoire-5/gestion-des-captures-laboratoire-5.component').then(m => m.GestionDesCapturesLaboratoire5Component) },
+  { path: 'gestion-des-datasets-et-annotations', loadComponent: () => import('./gestion-des-datasets-et-annotations/gestion-des-datasets-et-annotations.component').then(m => m.GestionDesDatasetsEtAnnotationsComponent) },
+  { path: 'gestion-des-roles-et-permissions', loadComponent: () => import('./gestion-des-roles-et-permissions/gestion-des-roles-et-permissions.component').then(m => m.GestionDesRolesEtPermissionsComponent) },
+  { path: 'gestion-des-sites-sentinelles-3', loadComponent: () => import('./gestion-des-sites-sentinelles-3/gestion-des-sites-sentinelles-3.component').then(m => m.GestionDesSitesSentinelles3Component) },
   { path: 'analyse-des-donnees-chercheur', loadComponent: () => import('./analyse-des-donnees-chercheur/analyse-des-donnees-chercheur.component').then(m => m.AnalyseDesDonneesChercheurComponent) },
   { path: 'catalogue-des-modeles-deployes', loadComponent: () => import('./catalogue-des-modeles-deployes/catalogue-des-modeles-deployes.component').then(m => m.CatalogueDesModelesDeployesComponent) },
   { path: 'configuration-indicateurs-rapport', loadComponent: () => import('./configuration-indicateurs-rapport/configuration-indicateurs-rapport.component').then(m => m.ConfigurationIndicateursRapportComponent) },
@@ -40,9 +38,7 @@ export const routes: Routes = [
   { path: 'tableau-de-bord-rapports-oms', loadComponent: () => import('./tableau-de-bord-rapports-oms/tableau-de-bord-rapports-oms.component').then(m => m.TableauDeBordRapportsOmsComponent) },
   { path: 'tableau-de-bord-synchro-dhis2', loadComponent: () => import('./tableau-de-bord-synchro-dhis2/tableau-de-bord-synchro-dhis2.component').then(m => m.TableauDeBordSynchroDhis2Component) },
   { path: 'validation-donnees-dhis2', loadComponent: () => import('./validation-donnees-dhis2/validation-donnees-dhis2.component').then(m => m.ValidationDonneesDhis2Component) },
-{ path: 'login', loadComponent: () => import('./login/login.component').then(m => m.LoginComponent) },
+
   { path: '**', redirectTo: '/dashboard', pathMatch: 'full' }
 ];
-
-
 

@@ -1,18 +1,10 @@
-import { Component, signal, inject } from '@angular/core';
-import { provideRouter } from '@angular/router';
-import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
-import { RouterOutlet, RouterLink } from '@angular/router';
-import { NavComponent } from './nav/nav';
-import { routes } from './app.routes';
-import { APP_INITIALIZER } from '@angular/core';
+import { Component } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, NavComponent],
-  templateUrl: './app.html',
-  styleUrl: './app.css',
+  imports: [RouterOutlet],
+  template: '<router-outlet></router-outlet>',
   standalone: true
 })
-export class App {
-  protected readonly title = signal('frontend-angular');
-}
+export class App {}

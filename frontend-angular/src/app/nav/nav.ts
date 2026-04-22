@@ -1,19 +1,24 @@
-import { Component, inject, effect } from '@angular/core';
-import { RouterLink } from '@angular/router';
-import { AuthService } from '../core/services/auth.service';
-import { User } from '../core/models/user.model';
+import { Component } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { User } from '../core/models/user.model';
 
 @Component({
   selector: 'app-nav',
   standalone: true,
-  imports: [RouterLink, CommonModule],
-  templateUrl: './nav.html',
-  styleUrl: './nav.css',
+  imports: [RouterLink, RouterLinkActive, CommonModule],
+  templateUrl: './nav.component.html',
+  styleUrls: ['./nav.css', './nav-active.css'],
 })
 export class NavComponent {
-  private authService = inject(AuthService);
-  user = this.authService.currentUser;
-
+  user: User = {
+    id: 1,
+    name: 'Admin',
+    email: 'admin@senpaludisme.com',
+    role_id: 1,
+    region_id: null,
+    phone: '+221 77 123 45 67',
+    bio: 'Administrateur système',
+    role: { id: 1, name: 'Super Admin' }
+  };
 }
-
