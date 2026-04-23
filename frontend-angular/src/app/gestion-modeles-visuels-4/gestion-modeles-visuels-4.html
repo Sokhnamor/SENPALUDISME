@@ -9,19 +9,23 @@
 </div>
 </div>
 <nav class="flex flex-col gap-2 mt-4">
-<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<a routerLink="validation-donnees-dhis2" 
+    class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
 <span class="material-symbols-outlined text-gray-600 dark:text-white">dashboard</span>
 <p class="text-gray-900 dark:text-white text-sm font-medium leading-normal">Dashboard</p>
 </a>
-<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 dark:bg-[#283039]" href="#">
+<a routerLink="" 
+    class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/10 dark:bg-[#283039]" href="#">
 <span class="material-symbols-outlined text-primary dark:text-white">model_training</span>
 <p class="text-primary dark:text-white text-sm font-medium leading-normal">Model Training</p>
 </a>
-<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<a routerLink="gestion-des-roles-et-permissions" 
+    class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" >
 <span class="material-symbols-outlined text-gray-600 dark:text-white">dataset</span>
 <p class="text-gray-900 dark:text-white text-sm font-medium leading-normal">Datasets</p>
 </a>
-<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<a routerLink="" 
+    class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" >
 <span class="material-symbols-outlined text-gray-600 dark:text-white">rocket_launch</span>
 <p class="text-gray-900 dark:text-white text-sm font-medium leading-normal">Deployment</p>
 </a>
@@ -31,12 +35,14 @@
 <button class="flex w-full cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em]">
 <span class="truncate">Nouveau Modèle</span>
 </button>
-<div class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-800 pt-2">
-<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<div routerLink="" 
+    class="flex flex-col gap-1 border-t border-gray-200 dark:border-gray-800 pt-2">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
 <span class="material-symbols-outlined text-gray-600 dark:text-white">settings</span>
 <p class="text-gray-900 dark:text-white text-sm font-medium leading-normal">Settings</p>
 </a>
-<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800" href="#">
+<a routerLink="" 
+    class="flex items-center gap-3 px-3 py-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">
 <span class="material-symbols-outlined text-gray-600 dark:text-white">logout</span>
 <p class="text-gray-900 dark:text-white text-sm font-medium leading-normal">Logout</p>
 </a>
@@ -110,7 +116,7 @@
 <div class="bg-white dark:bg-[#111418] rounded-xl border border-gray-200 dark:border-[#283039]">
 <h2 class="text-gray-900 dark:text-white text-xl font-bold leading-tight tracking-[-0.015em] px-5 py-4 border-b border-gray-200 dark:border-[#283039]">Suivi de l'Entraînement</h2>
 <div class="p-5">
-<img class="w-full h-auto rounded-lg object-cover" data-alt="A line graph showing training and validation accuracy and loss over epochs. The accuracy lines are trending upwards, while the loss lines are trending downwards, indicating successful model training." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIvzp6HE3u9mpvVWX6q-yIUAL6qAYSzJKkQ_rylkOoM8dGB4-UGxcJtGE_GPUZPM6xPKSsIxPM5ay0XpwEI_l9eRqjLfk5xMoWe1wDvVu8IUbRmenXE1KuWFJJnizjsprY_ZbEdutDxHf30XOWNLmxhwagRIbrZLNBknX-qlxrteQloE7OlV90V2gL6Xf299iGbLrZOe8NV-uQVMd9Fi7RNCpHlISqcRHciRVSuYtCm9mCvVcGRqqww80GXfMfTHRrr_Hl9eCgIw"/>
+<img alt="" class="w-full h-auto rounded-lg object-cover" data-alt="A line graph showing training and validation accuracy and loss over epochs. The accuracy lines are trending upwards, while the loss lines are trending downwards, indicating successful model training." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIvzp6HE3u9mpvVWX6q-yIUAL6qAYSzJKkQ_rylkOoM8dGB4-UGxcJtGE_GPUZPM6xPKSsIxPM5ay0XpwEI_l9eRqjLfk5xMoWe1wDvVu8IUbRmenXE1KuWFJJnizjsprY_ZbEdutDxHf30XOWNLmxhwagRIbrZLNBknX-qlxrteQloE7OlV90V2gL6Xf299iGbLrZOe8NV-uQVMd9Fi7RNCpHlISqcRHciRVSuYtCm9mCvVcGRqqww80GXfMfTHRrr_Hl9eCgIw"/>
 </div>
 </div>
 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -162,7 +168,7 @@
 <div class="grid grid-cols-1 md:grid-cols-5 gap-6">
 <div class="md:col-span-3">
 <div class="relative group aspect-video w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 flex items-center justify-center cursor-zoom-in">
-<img class="w-full h-full object-contain" data-alt="Annotated image of an Aedes aegypti mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAelJFFIZy5KrzALVpxr9XZloaVU3M7AvcQ0ZOyOOKxkKan8oZ4-3aycLyTO8UVOr89VTpGzdBVo4oa88u_9uPf_hdix1uT06xHLhxoeqJMuztCSoOylSBf0fpvKKaN_8Cbp_9-kP-5hoUfAmGvUtwRe2lPTss2jRoXBI5CVmXnEl3W02SyydzrhM-WNOiecjPcut7DXj5Hh1zPwqfvjcYplErSqxxnVPaYrKyKbKNBYCgwccUe-4DwaLmmjq1Dsrh3I3ep2x2wpg"/>
+<img alt="Annotated image of an Aedes aegypti mosquito." class="w-full h-full object-contain" data-alt="Annotated image of an Aedes aegypti mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAelJFFIZy5KrzALVpxr9XZloaVU3M7AvcQ0ZOyOOKxkKan8oZ4-3aycLyTO8UVOr89VTpGzdBVo4oa88u_9uPf_hdix1uT06xHLhxoeqJMuztCSoOylSBf0fpvKKaN_8Cbp_9-kP-5hoUfAmGvUtwRe2lPTss2jRoXBI5CVmXnEl3W02SyydzrhM-WNOiecjPcut7DXj5Hh1zPwqfvjcYplErSqxxnVPaYrKyKbKNBYCgwccUe-4DwaLmmjq1Dsrh3I3ep2x2wpg"/>
 <div class="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
 <span class="material-symbols-outlined text-white text-5xl">zoom_in</span>
 </div>
@@ -194,11 +200,11 @@
 </div>
 </div>
 <div class="mt-6 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-3">
-<img class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of an Anopheles gambiae mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3zbkE3m8fmiCPTm7VCsLn2LVFlsFrwm52Y-SMU0mYdErDNv004Uni72un6p86twU0q6Sk2lkj2-5cdfEVDkZdkT-HPtj-Qlz5lrAOTdbfny-WGDJzzOb8jFZjb5-FRo5S0uQuYPQ_PATj-_l5edu_mvv74H44rinA0ETF_FWJTtOeYc_2YoR53eqldR49C9iiOS1Cv1DVnLbxpBuTUijLmVjyEi7bbf9kgJgY4t7UShYqLJLYLHQqXKgdZ__2KQpEMFuPvvCnIg"/>
-<img class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of a Culex mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZbIDmtD-TyQZkoiCSBrzKRD3bJzZDsNZGmbFQIWXchLPQo_tEoQC0kYE9uFjfLYArRuDiEKJHtJOrcyUX-upnLd4yiVI-D3mY-HJ0usPj2Z_fsPbu5uxRdiovpTmuTbeWvmXn4AObfPinZjjjDMCtQ1Og4MLvr46Et5CWTRHCi1JDy48SXc8G-W-BmD4bvLeYZZkvCxrF8VKpaa8Lud-MthdC-gtcaiDXo47JBWIDxLNNlpj9lVF4JNJLpjJiKrXoU2bYD5AZ1g"/>
-<img class="aspect-square w-full rounded-md object-cover border-2 border-primary transition-all duration-200 cursor-pointer ring-2 ring-primary" data-alt="Annotated image of an Aedes aegypti mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAelJFFIZy5KrzALVpxr9XZloaVU3M7AvcQ0ZOyOOKxkKan8oZ4-3aycLyTO8UVOr89VTpGzdBVo4oa88u_9uPf_hdix1uT06xHLhxoeqJMuztCSoOylSBf0fpvKKaN_8Cbp_9-kP-5hoUfAmGvUtwRe2lPTss2jRoXBI5CVmXnEl3W02SyydzrhM-WNOiecjPcut7DXj5Hh1zPwqfvjcYplErSqxxnVPaYrKyKbKNBYCgwccUe-4DwaLmmjq1Dsrh3I3ep2x2wpg"/>
-<img class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of an Anopheles funestus mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA0HxzRV8BOBJf2pUJRS6yhqGW0-_df5XP_JlLyeHE3rzynAL2lHj3siPwN9Xw84VQ2v_k6-tg8ywLqNruvBfTbuQ7iAlcAlUS45toKmHX3y4bCFqQV5DlNnTySd7NY18P4KWxDEPCfK4U3tS8EykQgOs75hMBQqw57RgFJ7zGT4Hb9nFJUrA7H_1wurxtMLvuPlRAK3M0HL2TNJngRuDtk05A_BTjOE24XG7ARpaHBiVDJdzscF4YeAdFUjV0EJJKZUSheLIOhQ"/>
-<img class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of a mosquito larva." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAShOA4OjgrlwhETrRJjhBHE0glWhLfChL-loMDcREsMY7Utfgwn3di5_hC_5LRVOGkHjyKOgWZa55SD6IxS-eb-3J2dUoSrhA10FDFDZOtvezRCO1OA1vRq2VvIjwo577tzVfjs6YDCdV7VM_5uUK3u8RlOhnQPnXhA-ALiHnzq0upozhW5DjjqDtn9iUPym_Ln0TOPHYnOBlBhU616xjo3GfEmrJcf5tDgYrxV-moLul6zHNE8wgSG403fgPfv-zn6y7J_VFwQw"/>
+<img alt="Annotated image of an Anopheles gambiae mosquito." class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of an Anopheles gambiae mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3zbkE3m8fmiCPTm7VCsLn2LVFlsFrwm52Y-SMU0mYdErDNv004Uni72un6p86twU0q6Sk2lkj2-5cdfEVDkZdkT-HPtj-Qlz5lrAOTdbfny-WGDJzzOb8jFZjb5-FRo5S0uQuYPQ_PATj-_l5edu_mvv74H44rinA0ETF_FWJTtOeYc_2YoR53eqldR49C9iiOS1Cv1DVnLbxpBuTUijLmVjyEi7bbf9kgJgY4t7UShYqLJLYLHQqXKgdZ__2KQpEMFuPvvCnIg"/>
+<img alt="Annotated image of a Culex mosquito." class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of a Culex mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZbIDmtD-TyQZkoiCSBrzKRD3bJzZDsNZGmbFQIWXchLPQo_tEoQC0kYE9uFjfLYArRuDiEKJHtJOrcyUX-upnLd4yiVI-D3mY-HJ0usPj2Z_fsPbu5uxRdiovpTmuTbeWvmXn4AObfPinZjjjDMCtQ1Og4MLvr46Et5CWTRHCi1JDy48SXc8G-W-BmD4bvLeYZZkvCxrF8VKpaa8Lud-MthdC-gtcaiDXo47JBWIDxLNNlpj9lVF4JNJLpjJiKrXoU2bYD5AZ1g"/>
+<img alt="Annotated image of an Aedes aegypti mosquito." class="aspect-square w-full rounded-md object-cover border-2 border-primary transition-all duration-200 cursor-pointer ring-2 ring-primary" data-alt="Annotated image of an Aedes aegypti mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAelJFFIZy5KrzALVpxr9XZloaVU3M7AvcQ0ZOyOOKxkKan8oZ4-3aycLyTO8UVOr89VTpGzdBVo4oa88u_9uPf_hdix1uT06xHLhxoeqJMuztCSoOylSBf0fpvKKaN_8Cbp_9-kP-5hoUfAmGvUtwRe2lPTss2jRoXBI5CVmXnEl3W02SyydzrhM-WNOiecjPcut7DXj5Hh1zPwqfvjcYplErSqxxnVPaYrKyKbKNBYCgwccUe-4DwaLmmjq1Dsrh3I3ep2x2wpg"/>
+<img alt="Annotated image of an Anopheles funestus mosquito." class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of an Anopheles funestus mosquito." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCA0HxzRV8BOBJf2pUJRS6yhqGW0-_df5XP_JlLyeHE3rzynAL2lHj3siPwN9Xw84VQ2v_k6-tg8ywLqNruvBfTbuQ7iAlcAlUS45toKmHX3y4bCFqQV5DlNnTySd7NY18P4KWxDEPCfK4U3tS8EykQgOs75hMBQqw57RgFJ7zGT4Hb9nFJUrA7H_1wurxtMLvuPlRAK3M0HL2TNJngRuDtk05A_BTjOE24XG7ARpaHBiVDJdzscF4YeAdFUjV0EJJKZUSheLIOhQ"/>
+<img alt="Annotated image of a mosquito larva." class="aspect-square w-full rounded-md object-cover border-2 border-transparent hover:border-primary transition-all duration-200 cursor-pointer" data-alt="Annotated image of a mosquito larva." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAShOA4OjgrlwhETrRJjhBHE0glWhLfChL-loMDcREsMY7Utfgwn3di5_hC_5LRVOGkHjyKOgWZa55SD6IxS-eb-3J2dUoSrhA10FDFDZOtvezRCO1OA1vRq2VvIjwo577tzVfjs6YDCdV7VM_5uUK3u8RlOhnQPnXhA-ALiHnzq0upozhW5DjjqDtn9iUPym_Ln0TOPHYnOBlBhU616xjo3GfEmrJcf5tDgYrxV-moLul6zHNE8wgSG403fgPfv-zn6y7J_VFwQw"/>
 <div class="aspect-square w-full rounded-md bg-gray-100 dark:bg-gray-800 flex items-center justify-center text-gray-500 dark:text-gray-400 hover:bg-gray-200 dark:hover:bg-gray-700 cursor-pointer text-sm">+986</div>
 </div>
 </div>
@@ -208,5 +214,3 @@
 </div>
 </main>
 </div>
-
-

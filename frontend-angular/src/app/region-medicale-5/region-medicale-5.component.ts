@@ -1,8 +1,10 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { RouterLink, RouterLinkActive } from '@angular/router';
+
 @Component({
   selector: 'app-region-medicale-5',
   standalone: true,
-  imports: [],
+imports: [],
 
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './region-medicale-5.html',
